@@ -23,6 +23,7 @@
 hs_err_pid*
 replay_pid*
 
+.syndicate
 .syndicate-config-dev
 target
 **/target/
