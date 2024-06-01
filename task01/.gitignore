@@ -1,3 +1,7 @@
+.syndicate
+logs/
+.syndicate-config-*/
+
 # Compiled class file
 *.class
 
