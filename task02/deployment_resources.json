@@ -3,13 +3,20 @@
     "policy_content": {
       "Statement": [
         {
+          "StatementId": "FunctionURLAllowPublicAccess",
           "Action": [
             "logs:CreateLogGroup",
             "logs:CreateLogStream",
-            "logs:PutLogEvents"
+            "logs:PutLogEvents",
+            "lambda:InvokeFunctionUrl"
           ],
           "Effect": "Allow",
-          "Resource": "*"
+          "Resource": "arn:aws:lambda:eu-central-1:196241772369:function:cmtr-b9f1a140-hello_world",
+          "Condition": {
+            "StringEquals": {
+              "lambda:FunctionUrlAuthType": "NONE"
+            }
+          }
         }
       ],
       "Version": "2012-10-17"
