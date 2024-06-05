@@ -16,20 +16,15 @@
     },
     "resource_type": "iam_policy"
   },
-  "hello_world-role": {
+  "hello_world-url-role": {
     "predefined_policies": [],
     "principal_service": "lambda",
     "custom_policies": [
       "lambda-basic-execution"
     ],
-    "resource_type": "iam_role"
-  },
-  "task021-role": {
-    "predefined_policies": [],
-    "principal_service": "lambda",
-    "custom_policies": [
-      "lambda-basic-execution"
-    ],
-    "resource_type": "iam_role"
+    "resource_type": "iam_role",
+    "allowed_accounts": [
+      "${account_id}"
+    ]
   }
 }
