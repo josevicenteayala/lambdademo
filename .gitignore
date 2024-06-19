@@ -31,3 +31,4 @@ target
 logs/
 /.idea/
 .idea/
+.DS_Store
